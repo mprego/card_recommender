@@ -1,0 +1,55 @@
+[
+  {'card': 'Chase Freedom Unlimited',
+   'rewards': {'currency': 'chase', 
+               'base_rate': 1.5,
+               'categories': {'drug store': 3,
+                              'dining': 3},
+   'esb': {'months': 3,
+           'spend': 500,
+           'reward': 200,
+           'currency': 'cash'}
+  },
+  
+  {'card': 'Chase Freedom Flex',
+   'rewards': {'currency': 'chase', 
+               'base_rate': 1,
+               'categories': {'drug store': 3,
+                              'dining': 3},
+   'esb': {'months': 3,
+           'spend': 500,
+           'reward': 200
+           'currency': 'cash'}
+  },
+  
+  {'card': 'Chase Sapphire Preferred',
+   'rewards': {'currency': 'chase', 
+               'base_rate': 1,
+               'categories': {'travel': 2,
+                              'dining': 2,
+                              '},
+   'esb': {'months': 3,
+           'spend': 4000,
+           'reward': 60000,
+           'currency': 'chase'},
+           
+    'amf': {'amount': 95,
+            'first year waive': False}
+  },  
+  
+  {'card': 'Chase Sapphire Reserve',
+   'rewards': {'currency': 'chase', 
+               'base_rate': 1,
+               'categories': {'travel': 3,
+                              'dining': 3,
+                              '},
+   'esb': {'months': 3,
+           'spend': 4000,
+           'reward': 50000,
+           'currency': 'chase'},
+           
+    'amf': {'amount': 550,
+            'first year waive': False},
+            
+    'credits': [{'category': 'travel', 
+                 'amount': 300}]
+  },    
