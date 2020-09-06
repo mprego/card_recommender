@@ -53,3 +53,56 @@
     'credits': [{'category': 'travel', 
                  'amount': 300}]
   },    
+
+  {'card': 'Capital One Venture',
+   'rewards': {'currency': 'cash', 
+               'base_rate': .02,
+
+   'esb': {'months': 3,
+           'spend': 3000,
+           'reward': 500,
+           'currency': 'cash'},
+           
+    'amf': {'amount': 95,
+            'first year waive': True},
+  }, 
+   
+  {'card': 'Capital One Savor',
+   'rewards': {'currency': 'cash', 
+               'base_rate': .01,
+               'categories': {'entertainment': .04,
+                              'dining': .04,
+                              'grocery': .02
+                               },
+   'esb': {'months': 3,
+           'spend': 3000,
+           'reward': 300,
+           'currency': 'cash'},
+           
+    'amf': {'amount': 95,
+            'first year waive': False},
+  },     
+
+  {'card': 'Capital One SavorOne',
+   'rewards': {'currency': 'cash', 
+               'base_rate': .01,
+               'categories': {'entertainment': .03,
+                              'dining': .03,
+                              'grocery': .02
+                               },
+   'esb': {'months': 3,
+           'spend': 500,
+           'reward': 150,
+           'currency': 'cash'},
+  }, 
+   
+  {'card': 'Capital One Quicksilver',
+   'rewards': {'currency': 'cash', 
+               'base_rate': .015,
+
+   'esb': {'months': 3,
+           'spend': 500,
+           'reward': 150,
+           'currency': 'cash'},
+  },    
+]
