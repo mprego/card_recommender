@@ -25,8 +25,7 @@
    'rewards': {'currency': 'chase', 
                'base_rate': 1,
                'categories': {'travel': 2,
-                              'dining': 2,
-                              '},
+                              'dining': 2},
    'esb': {'months': 3,
            'spend': 4000,
            'reward': 60000,
@@ -40,8 +39,7 @@
    'rewards': {'currency': 'chase', 
                'base_rate': 1,
                'categories': {'travel': 3,
-                              'dining': 3,
-                              '},
+                              'dining': 3},
    'esb': {'months': 3,
            'spend': 4000,
            'reward': 50000,
@@ -50,8 +48,7 @@
     'amf': {'amount': 550,
             'first year waive': False},
             
-    'credits': [{'category': 'travel', 
-                 'amount': 300}]
+    'credits': {'travel': 300}
   },    
 
   {'card': 'Capital One Venture',
