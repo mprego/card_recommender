@@ -3,7 +3,8 @@
    'rewards': {'currency': 'chase', 
                'base_rate': 1.5,
                'categories': {'drug store': 3,
-                              'dining': 3},
+                              'dining': 3}
+              },
    'esb': {'months': 3,
            'spend': 500,
            'reward': 200,
@@ -14,7 +15,8 @@
    'rewards': {'currency': 'chase', 
                'base_rate': 1,
                'categories': {'drug store': 3,
-                              'dining': 3},
+                              'dining': 3}
+              },
    'esb': {'months': 3,
            'spend': 500,
            'reward': 200
@@ -25,7 +27,8 @@
    'rewards': {'currency': 'chase', 
                'base_rate': 1,
                'categories': {'travel': 2,
-                              'dining': 2},
+                              'dining': 2}
+              },
    'esb': {'months': 3,
            'spend': 4000,
            'reward': 60000,
@@ -39,7 +42,8 @@
    'rewards': {'currency': 'chase', 
                'base_rate': 1,
                'categories': {'travel': 3,
-                              'dining': 3},
+                              'dining': 3}
+              },
    'esb': {'months': 3,
            'spend': 4000,
            'reward': 50000,
@@ -53,7 +57,8 @@
 
   {'card': 'Capital One Venture',
    'rewards': {'currency': 'cash', 
-               'base_rate': .02,
+               'base_rate': .02
+              },
 
    'esb': {'months': 3,
            'spend': 3000,
@@ -69,8 +74,9 @@
                'base_rate': .01,
                'categories': {'entertainment': .04,
                               'dining': .04,
-                              'grocery': .02
-                               },
+                              'grocery': .02}
+              },
+   
    'esb': {'months': 3,
            'spend': 3000,
            'reward': 300,
