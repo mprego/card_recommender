@@ -1,108 +1,108 @@
-[
-  {'card': 'Chase Freedom Unlimited',
-   'rewards': {'currency': 'chase', 
-               'base_rate': 1.5,
-               'categories': {'drug store': 3,
-                              'dining': 3},
-   'esb': {'months': 3,
-           'spend': 500,
-           'reward': 200,
-           'currency': 'cash'}
+{
+    "cards":
+    [
+        {"card": "Chase Freedom Unlimited",
+               "rewards": {"currency": "chase", 
+                           "base_rate": 1.5,
+                           "categories": {"drug store": 3,
+                                          "dining": 3}},
+               "esb": {"months": 3,
+                       "spend": 500,
+                       "reward": 200,
+                       "currency": "cash"}
+                              },
+  
+  {"card": "Chase Freedom Flex",
+   "rewards": {"currency": "chase", 
+               "base_rate": 1,
+               "categories": {"drug store": 3,
+                              "dining": 3}},
+   "esb": {"months": 3,
+           "spend": 500,
+           "reward": 200,
+           "currency": "cash"}
   },
   
-  {'card': 'Chase Freedom Flex',
-   'rewards': {'currency': 'chase', 
-               'base_rate': 1,
-               'categories': {'drug store': 3,
-                              'dining': 3},
-   'esb': {'months': 3,
-           'spend': 500,
-           'reward': 200
-           'currency': 'cash'}
-  },
-  
-  {'card': 'Chase Sapphire Preferred',
-   'rewards': {'currency': 'chase', 
-               'base_rate': 1,
-               'categories': {'travel': 2,
-                              'dining': 2,
-                              '},
-   'esb': {'months': 3,
-           'spend': 4000,
-           'reward': 60000,
-           'currency': 'chase'},
+  {"card": "Chase Sapphire Preferred",
+   "rewards": {"currency": "chase", 
+               "base_rate": 1,
+               "categories": {"travel": 2,
+                              "dining": 2}},
+   "esb": {"months": 3,
+           "spend": 4000,
+           "reward": 60000,
+           "currency": "chase"},
            
-    'amf': {'amount': 95,
-            'first year waive': False}
+    "amf": {"amount": 95,
+            "first year waive": 0}
   },  
   
-  {'card': 'Chase Sapphire Reserve',
-   'rewards': {'currency': 'chase', 
-               'base_rate': 1,
-               'categories': {'travel': 3,
-                              'dining': 3,
-                              '},
-   'esb': {'months': 3,
-           'spend': 4000,
-           'reward': 50000,
-           'currency': 'chase'},
+  {"card": "Chase Sapphire Reserve",
+   "rewards": {"currency": "chase", 
+               "base_rate": 1,
+               "categories": {"travel": 3,
+                              "dining": 3}},
+   "esb": {"months": 3,
+           "spend": 4000,
+           "reward": 50000,
+           "currency": "chase"},
            
-    'amf': {'amount': 550,
-            'first year waive': False},
+    "amf": {"amount": 550,
+            "first year waive": 0},
             
-    'credits': [{'category': 'travel', 
-                 'amount': 300}]
+    "credits": [{"category": "travel", 
+                 "amount": 300}]
   },    
-
-  {'card': 'Capital One Venture',
-   'rewards': {'currency': 'cash', 
-               'base_rate': .02,
-
-   'esb': {'months': 3,
-           'spend': 3000,
-           'reward': 500,
-           'currency': 'cash'},
+      
+  {"card": "Capital One Savor",
+   "rewards": {"currency": "cash", 
+               "base_rate": 0.01,
+               "categories": {"entertainment": 0.04,
+                              "dining": 0.04,
+                              "grocery": 0.02}},
+   "esb": {"months": 3,
+           "spend": 3000,
+           "reward": 300,
+           "currency": "cash"},
            
-    'amf': {'amount': 95,
-            'first year waive': True},
-  }, 
-   
-  {'card': 'Capital One Savor',
-   'rewards': {'currency': 'cash', 
-               'base_rate': .01,
-               'categories': {'entertainment': .04,
-                              'dining': .04,
-                              'grocery': .02
-                               },
-   'esb': {'months': 3,
-           'spend': 3000,
-           'reward': 300,
-           'currency': 'cash'},
-           
-    'amf': {'amount': 95,
-            'first year waive': False},
+    "amf": {"amount": 95,
+            "first year waive": 1}
   },     
 
-  {'card': 'Capital One SavorOne',
-   'rewards': {'currency': 'cash', 
-               'base_rate': .01,
-               'categories': {'entertainment': .03,
-                              'dining': .03,
-                              'grocery': .02
-                               },
-   'esb': {'months': 3,
-           'spend': 500,
-           'reward': 150,
-           'currency': 'cash'},
+  {"card": "Capital One SavorOne",
+   "rewards": {"currency": "cash", 
+               "base_rate": 0.01,
+               "categories": {"entertainment": 0.03,
+                              "dining": 0.03,
+                              "grocery": 0.02
+                               }},
+   "esb": {"months": 3,
+           "spend": 500,
+           "reward": 150,
+           "currency": "cash"}
   }, 
    
-  {'card': 'Capital One Quicksilver',
-   'rewards': {'currency': 'cash', 
-               'base_rate': .015,
+  {"card": "Capital One Quicksilver",
+   "rewards": {"currency": "cash", 
+               "base_rate": 0.015},
 
-   'esb': {'months': 3,
-           'spend': 500,
-           'reward': 150,
-           'currency': 'cash'},
+   "esb": {"months": 3,
+           "spend": 500,
+           "reward": 150,
+           "currency": "cash"}
   },    
+        
+  {"card": "Capital One Venture",
+   "rewards": {"currency": "cash", 
+               "base_rate": 0.02},
+
+   "esb": {"months": 3,
+           "spend": 3000,
+           "reward": 500,
+           "currency": "cash"},
+           
+    "amf": {"amount": 95,
+            "first year waive": 1}
+  } 
 ]
+}
