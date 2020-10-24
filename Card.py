@@ -40,13 +40,14 @@ class Card(object):
         else:
             self.amf_amount = 0
             self.amf_waive = False
+        self.amf_paid_months = []
         
         if 'credits' in card_dict.keys():
             self.credits_cat = card_dict['credits']
         else:
             self.credits_cat = {}
             
-        self.open_month = pd.to_datetime(open_month)
+        self.open_month = open_month
         
     def calc_rewards(self, trans_dict):
         trans_amount = trans_dict['amount']
@@ -67,7 +68,7 @@ class Card(object):
 
     def apply_to_esb(self, trans_dict, curr_month):
         # if esb promotion is still happening
-        if int((pd.to_datetime(curr_month) - self.open_month).days/30) <=self.esb_months:
+        if curr_month - self.open_month <=self.esb_months:
             spend_used = min(self.esb_spend, trans_dict['amount'])
             self.esb_spend = max(0, self.esb_spend - spend_used)
             # if we've met the esb spend threshold'
@@ -81,16 +82,21 @@ class Card(object):
             
     def calc_amf(self, curr_month):
         # if it's an anniversary
-        if pd.to_datetime(curr_month).month == self.open_month.month:
+        if (curr_month - self.open_month)%12 == 0:
             # if it's the first year and it's waivable
-            if pd.to_datetime(curr_month).year == self.open_month.year and self.amf_waive:
+            if (curr_month == self.open_month) and self.amf_waive:
+                return 0
+            # if we've already paid for this month
+            if curr_month in self.amf_paid_months:
                 return 0
             else:
+                self.amf_paid_months.append(curr_month)
                 return -1 * self.amf_amount
+        else:
+            return 0
             
     def apply_transactions(self, trans_dict, curr_month):
         payment = 0
-        payment += self.calc_amf(curr_month)
         payment += self.apply_to_esb(trans_dict, curr_month)
         payment += self.calc_rewards(trans_dict)
         return payment
